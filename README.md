@@ -5,7 +5,17 @@ For the best interactive experience, please visit our official demo page: **[spe
 ---
 
 ## 📖 Abstract
-*(Insert your paper's abstract here. Briefly explain how you use contextual grounding from slides/OCR to reconstruct missing speech segments.)*
+**Speech inpainting** reconstructs missing or corrupted speech segments, enabling restoration of damaged virtual lectures and online presentations. While existing audio-only approaches perform well for short gaps, their performance degrades significantly for long-duration missing regions.
+
+In this work, we introduce a novel **multimodal speech inpainting framework** that leverages accompanying presentation slides as semantic grounding for reconstructing both short and long missing speech segments **(10 ms–1500 ms)**.
+
+Our approach reformulates speech inpainting from a local signal-reconstruction problem into a contextual speech generation task using a **Large Audio-Language Model (LALM)**.
+
+To improve acoustic flexibility during generation, we propose **Acoustic Similarity Groups (ASG)**, a token-grouping strategy that relaxes conventional hard-label training.
+
+In addition, we incorporate an auxiliary **Connectionist Temporal Classification (CTC)** objective to improve alignment between generated speech and target lexical content.
+
+Experiments on the M3AV-CHI benchmark demonstrate that the proposed multimodal framework substantially outperforms an audio-only baseline and consistently improves intelligibility and reconstruction quality across challenging long-duration gaps.
 
 ## 🎧 Audio Samples
 
