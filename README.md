@@ -27,7 +27,7 @@ In addition, we incorporate an auxiliary **Connectionist Temporal Classification
 Experiments on the M3AV-CHI benchmark demonstrate that the proposed multimodal framework substantially outperforms an audio-only baseline and consistently improves intelligibility and reconstruction quality across challenging long-duration gaps.
 
 ## ⚙️ Architecture
-![Overview of the proposed multimodal framework](./assets/architecture.png)
+![Overview of the proposed multimodal framework](./assets/architecture.jpeg)
 
 **Figure 1:** Overview of the proposed multimodal framework. The system integrates Slide-OCR text tokens and masked latent audio features, followed with an instruction prompt to an LLM decoder. Training is enhanced by an ASG module that modify the CE loss term. During training, the framework makes use of a CTC loss as an auxiliary task. The network outputs discrete audio tokens, which are decoded to generate the inpainted audio and reconstructing the complete recovered audio waveform.
 
